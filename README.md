@@ -5,20 +5,20 @@ So make sure to run this cmd -> "npm install expressJs nodemon" . this will requ
 It serves a single video file locally, eliminating the need for users to download the entire video. Instead, the video player fetches data from the server dynamically on each request.
 
 ## Pros
-*Efficient Streaming:* Users can start watching the video without waiting for the entire file to download, making the streaming experience more efficient.
+**Efficient Streaming:** Users can start watching the video without waiting for the entire file to download, making the streaming experience more efficient.
 
-*Reduced Bandwidth Usage:* Dynamic data fetching minimizes the amount of data transferred, reducing bandwidth usage compared to downloading the entire video.
+**Reduced Bandwidth Usage:** Dynamic data fetching minimizes the amount of data transferred, reducing bandwidth usage compared to downloading the entire video.
 
-*Node.js Ecosystem:* Leveraging the Node.js ecosystem allows for easy scalability and integration with other JavaScript libraries and modules.
+**Node.js Ecosystem:** Leveraging the Node.js ecosystem allows for easy scalability and integration with other JavaScript libraries and modules.
 
-*Automatic Reloading:* Nodemon is used for automatic server reloading during development, making the development process smoother.
+**Automatic Reloading:** Nodemon is used for automatic server reloading during development, making the development process smoother.
 
 ## Cons 
-*Limited Offline Access:* Since the video data is fetched dynamically, offline access to the video is limited, and users may need a stable internet connection.
+**Limited Offline Access:** Since the video data is fetched dynamically, offline access to the video is limited, and users may need a stable internet connection.
 
-*Server Overhead:* Dynamic fetching might introduce server overhead, especially with a large number of concurrent users, impacting server performance.
+**Server Overhead:** Dynamic fetching might introduce server overhead, especially with a large number of concurrent users, impacting server performance.
 
-*Multiple requests:* There is inefficiency in using this method to pass the data as the server send multiple data chunks even when you reload/playback the video. It doesnt use cache memory. So it makes it less efficient in terms pf data transfer!
+**Multiple requests:** There is inefficiency in using this method to pass the data as the server send multiple data chunks even when you reload/playback the video. It doesnt use cache memory. So it makes it less efficient in terms pf data transfer!
 
 
 there might by other pros and cons, I have mentioned the only ones which i was aware of.
